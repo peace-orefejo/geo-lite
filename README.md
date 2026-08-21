@@ -7,11 +7,13 @@ A small take-home exercise. Read this, then build.
 We track how visible a set of brands are in AI-generated answers. Every day we run a fixed
 set of prompts through a web-browsing LLM and record what comes back.
 
-`data/responses.json` holds one day of raw responses. Each object looks like:
+`data/responses.json` holds the raw responses from the last few daily runs. Each object
+looks like:
 
 ```json
 {
   "id": "r1",
+  "collectedAt": "2026-08-18T06:12:04Z",
   "prompt": "the user's question",
   "text": "the LLM's answer",
   "citations": [{ "url": "https://…" }]
